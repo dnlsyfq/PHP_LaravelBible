@@ -13,10 +13,13 @@ DB_PASSWORD=""
 ```
 
 ```
+in project folder 
+
+$COMPOSER_MEMORY_LIMIT=-1 composer install
 
 //php artisan config:cache --env=testing
 
-php artisan key:generate
-php artisan config:cache
-php artisan serve
+$php artisan key:generate
+$php artisan config:cache
+$php artisan serve
 ```
