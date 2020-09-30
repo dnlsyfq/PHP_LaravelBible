@@ -23,3 +23,23 @@ $php artisan key:generate
 $php artisan config:cache
 $php artisan serve
 ```
+
+# Fix Memory Limit
+
+$ php --ini
+$ cat /usr/local/etc/php/7.4/php.ini
+
+## Modify
+```
+; Max memory per instance
+memory_limit = 128M
+;The maximum size of an uploaded file.
+upload_max_filesize = 128M
+;Sets max size of post data allowed. This setting also affects file upload. To upload large files, this value must be larger than upload_max_filesize
+post_max_size = 128M
+```
+```
+memory_limit setting from 128 to -1
+```
+
+
