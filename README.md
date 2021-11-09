@@ -42,4 +42,10 @@ post_max_size = 128M
 memory_limit setting from 128 to -1
 ```
 
-
+### MAC OS 
+* cp .env.example .env
+* composer install
+* npm install
+* php artisan migrate --seed
+* php artisan key:generate
+* php artisan serve
