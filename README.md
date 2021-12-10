@@ -44,6 +44,8 @@ memory_limit setting from 128 to -1
 
 ### MAC OS 
 * cp .env.example .env
+* To enable extensions php.ini
+* composer update
 * composer install
 * npm install
 * php artisan migrate --seed
